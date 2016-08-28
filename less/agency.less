@@ -64,13 +64,13 @@ h1, h2, h3, h4, h5, h6 {
 // Restyled Primary Buttons
 
 .btn-primary {
-    .button-variant(white; @theme-primary; @theme-primary);
+    .button-variant(black; @theme-primary; @theme-primary);
     .heading-font;
     font-weight: 700;
 }
 
 .btn-xl {
-    .button-variant(white; @theme-primary; @theme-primary);
+    .button-variant(black; @theme-primary; @theme-primary);
     .heading-font;
     font-weight: 700;
     border-radius: 3px;
@@ -83,6 +83,8 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-custom {
     background-color: @gray-darker;
     border-color: transparent;
+	// font-weight: bolder;
+
     .navbar-brand {
         color: @theme-primary;
         .script-font;
@@ -100,8 +102,9 @@ h1, h2, h3, h4, h5, h6 {
         background-color: @theme-primary;
         border-color: @theme-primary;
         .heading-font;
-        color: white;
-        font-size: 12px;
+        color: black;
+        font-size: 16px;
+		font-weight: bolder;
         &:hover,
         &:focus {
             background-color: @theme-primary;
@@ -111,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
         li {
             a {
                 .heading-font;
-                font-weight: 400;
+                font-weight: bolder;
                 letter-spacing: 1px;
                 color: white;
                 &:hover,
@@ -124,12 +127,12 @@ h1, h2, h3, h4, h5, h6 {
     }
     .navbar-nav>.active>a {
         border-radius: 0;
-        color: white;
+        color: black;
         background-color: @theme-primary;
     }
     .navbar-nav>.active>a:hover,
     .navbar-nav>.active>a:focus {
-        color: white;
+        color: black;
         background-color: darken(@theme-primary, 10%);
     }
 }
@@ -167,10 +170,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    background-image: url('../img/header-bg.jpg');
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
+	height: 100vh;
+	background-color: #110d0e;
+    // background-image: url('../img/header-bg.jpg');
+    // background-repeat: no-repeat;
+    // background-attachment: scroll;
+    // background-position: center center;
     .background-cover;
     text-align: center;
     color: white;
@@ -562,22 +567,22 @@ section#contact {
     ::-webkit-input-placeholder {
        .heading-font;
        font-weight: 700;
-       color: @gray-lighter;
+       color: black;
     }
     :-moz-placeholder { /* Firefox 18- */
        .heading-font;
        font-weight: 700;
-       color: @gray-lighter;
+       color: black;
     }
     ::-moz-placeholder {  /* Firefox 19+ */
        .heading-font;
        font-weight: 700;
-       color: @gray-lighter;
+       color: black;
     }
     :-ms-input-placeholder {  
        .heading-font;
        font-weight: 700;
-       color: @gray-lighter;
+       color: black;
     }
     .text-danger {
         color: @theme-danger;
@@ -589,6 +594,8 @@ section#contact {
 footer {
     padding: 25px 0;
     text-align: center;
+	font-weight: bolder;
+
     span.copyright {
         line-height: 40px;
         .heading-font;
@@ -600,6 +607,9 @@ footer {
         .heading-font;
         text-transform: none;
     }
+	ul.quicklinks>li>a{
+		color: black;		
+	}
 }
 
 // Social Buttons
@@ -735,4 +745,8 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @theme-primary;
+}
+
+li.active {
+	color: #000;
 }

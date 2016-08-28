@@ -6,6 +6,7 @@
   color: @color;
   background-color: @background;
   border-color: @border;
+  font-weight: bold;
 
   &:hover,
   &:focus,
@@ -57,6 +58,7 @@
 
 .script-font() {
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+    src: url(../fonts/ParisPro-Ultra-Extra-Light.otf) format('opentype');  
 }
 
 .body-font() {
@@ -64,6 +66,16 @@
 }
 
 .heading-font() {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Paris Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+}
+
+@font-face {
+    font-family: "Paris Pro";
+    src: url(../fonts/ParisPro-Ultra-Extra-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: "Kaushan Script";
+    src: url(../fonts/ParisPro-Ultra-Extra-Light.otf) format('opentype');
 }
