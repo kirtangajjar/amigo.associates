@@ -764,3 +764,8 @@ body {
 li.active {
   color: #000;
 }
+@media (min-width: 767px) {
+  #banner-img {
+    max-width: 64%;
+  }
+}
