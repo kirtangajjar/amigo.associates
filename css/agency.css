@@ -764,3 +764,25 @@ body {
 li.active {
   color: #000;
 }
+.contact {
+  color: white;
+}
+.contact > div {
+  position: absolute;
+  top: 25rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+.vcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row.match-my-cols {
+  overflow: hidden;
+}
+.row.match-my-cols [class*="col-"] {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
