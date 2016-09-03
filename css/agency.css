@@ -11,6 +11,10 @@
   font-family: "Kaushan Script";
   src: url(../fonts/ParisPro-Ultra-Extra-Light.otf) format('opentype');
 }
+@font-face {
+  font-family: "Futura Lt BT";
+  src: url(../fonts/futura-lt-book.woff);
+}
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -768,4 +772,8 @@ li.active {
   #banner-img {
     max-width: 64%;
   }
+}
+h4.service-heading + p.text-muted {
+  font-family: "Futura Lt BT";
+  font-size: 11pt;
 }
